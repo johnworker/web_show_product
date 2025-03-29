@@ -1,0 +1,13 @@
+/* 清除預設 margin 與 padding，並隱藏捲軸 */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* 設定 3D 畫布容器尺寸 */
+  #container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
