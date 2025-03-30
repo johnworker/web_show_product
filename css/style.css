@@ -1,13 +1,23 @@
-/* 清除預設 margin 與 padding，並隱藏捲軸 */
+/* 清除預設 margin 與 padding，隱藏捲軸 */
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  /* 設定 3D 畫布容器尺寸 */
-  #container {
-    width: 100vw;
-    height: 100vh;
-  }
-  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* 3D 畫布容器設定 */
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 控制區樣式 */
+#controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}

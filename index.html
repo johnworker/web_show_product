@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D場景滑鼠控制示範</title>
+  <title>3D 飲料展示示範</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- 控制區：飲料選擇下拉選單 -->
+  <div id="controls">
+    <label for="drinkSelect">選擇飲料:</label>
+    <select id="drinkSelect">
+      <option value="drink1.jpg">可口可樂</option>
+      <option value="drink2.jpg">雪碧</option>
+      <option value="drink3.jpg">果汁</option>
+    </select>
+  </div>
+
+  <!-- 3D 畫布容器 -->
   <div id="container"></div>
-  <!-- 引入 three.js 函式庫 -->
+
+  <!-- 載入 three.js 函式庫 -->
   <script src="libs/three.min.js"></script>
-  <!-- 引入自訂的 JavaScript -->
+  <!-- 載入自訂的 JavaScript 程式 -->
   <script src="js/main.js"></script>
 </body>
 </html>
